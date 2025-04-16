@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms lets learn it</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        h3{
+            color: purple;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid rgba(189, 30, 189, 0.459);
+            border-radius: 12px;
+            background-color: rgba(131, 96, 167, 0.288);
+            
+        }
+        form{
+            padding: 15px;
+            margin-top: 45px;   
+        }
+        .gender{
+            margin-left: 13px;
+            
+        }
+        #fruits{
+            margin: 13px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <h3>Form to apply for sigma web development</h3>
+    <div>
+        <form action="post">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </form>
+    </div>
+
+    <div>
+        <input class="gender" type="radio" id="male" name="gander" value="male">
+        <label for="male">Male</label>
+        <input class="gender" type="radio" id="female" name="gander" value="female">
+        <label for="female">Female</label>
+    </div>
+        
+    <div>
+        <label for="fruits">Fruits</label><br>
+        <select id="fruits" class="select" name="fruits">
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="mango">mango</option>
+        </select>
+    </div>
+    <div>
+        <label class="comments" for="comments">Enter your comment</label><br>
+        <textarea class="comments" name="comments" id="comments" rows="4" cols="30"> </textarea>
+    </div>
+    <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">subscribe to newslatter</label>
+        </div>
+</body>
+
+</html>

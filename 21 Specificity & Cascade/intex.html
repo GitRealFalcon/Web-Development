@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & cascade</title>
+    <style>
+        /* The specificity of this selector is : 0; */
+        *{
+            color: red;
+        }
+        /* The specificity of this selector is : 1; */
+        p{
+            color: burlywood;
+        }
+        /* The specificity of this selector is : 10; */
+        .blue{
+            color: blue; /* This is an important declaration */
+        }
+        /* The specificity of this selector is : 10 + 1 =11; */
+        p.green{
+            color: green;
+        }
+        /* The specificity of this selector is : 10; */
+        .yellow{
+            color: yellow;
+        }
+        /* The specificity of this selector is : 1+10+10+10+10=41; */
+        a.harryclass.rohanclass[href]:hover{
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        
+        <p  class="blue green yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam, veniam similique aspernatur autem
+            ea impedit molestias quae perferendis ratione at eius expedita. Quae porro laboriosam voluptatem deleniti id
+            architecto?</p>
+    </div>
+</body>
+
+</html>

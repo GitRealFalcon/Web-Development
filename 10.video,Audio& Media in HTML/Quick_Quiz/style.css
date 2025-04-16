@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(170, 209, 196);
+    color: rgb(54, 156, 109);
+}
+iframe{
+    
+    margin: 10px;
+    border-radius: 3%;
+    height: auto;
+    width: auto;
+
+}
+ h1{
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: inherit;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+ }
+
+

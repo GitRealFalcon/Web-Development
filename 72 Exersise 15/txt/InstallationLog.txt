@@ -1,0 +1,6 @@
+************************************* Invoked: Sun Sep 8 09:22:20 2024
+[0] Arguments: C:\Users\mohdn\Downloads\msys2-x86_64-20240727.exe
+[12] Operations sanity check succeeded.
+[13] Warning: Cannot create lock file "C:\Users\mohdn\AppData\Local\Temp\msys2-x86_64-202407271234865.lock": The process cannot access the file because it is being used by another process.
+ (0x00000020)
+[48] UnableToStart : Unable to start installer : Another msys2-x86_64-20240727 instance is already running. Wait until it finishes, close it, or restart your system.

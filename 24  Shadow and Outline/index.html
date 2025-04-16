@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Outline</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Emilys+Candy&display=swap');
+
+        .box {
+
+            /* border: 2px solid black; */
+            box-shadow: inset 0px 0px 8px 3px #00bcd457;
+            padding: 12px;
+            color: #E91E63;
+            background-color: honeydew;
+            border-radius: 24px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            text-transform: capitalize;
+            font-family: "Emilys Candy", serif;
+            font-weight:normal;
+            font-style: normal;
+            font-size: 1.3em;
+            text-shadow: 0px 3px 8px #E91E63;
+            outline: 2px solid #00bcd457;
+            outline-offset: 3px;
+            /* box-shadow: 0px 4px 12px 2px #00bcd457 */
+        }
+        .outline{
+            border: 2px solid black;
+            outline: 2px solid black;
+            outline-offset: 11px;
+            border-radius: 34px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Hi i am a Shadow
+    </div>
+    <div class="outline"> I am Outline</div>
+</body>
+
+</html>

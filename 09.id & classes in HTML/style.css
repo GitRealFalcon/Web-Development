@@ -1,0 +1,16 @@
+.red{
+    color: rgb(15, 28, 206);
+}
+.bg-yellow{
+    
+    font-size: large;
+    text-align: center;
+    background-color: yellowgreen;
+}
+#second{
+    text-align: center;
+    font-size: large;
+   font-style: italic;
+    background-color: black;
+    color: aliceblue;
+}

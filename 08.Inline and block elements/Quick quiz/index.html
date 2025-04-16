@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form name pincode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Details form</h1>
+    <div>
+        <form action="post">
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" placeholder="Enter your name">
+        </form>
+    </div>
+    <div>
+        <input type="radio" id="male" name="gander" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gander" value="female">
+        <label for="female">Female</label>
+    </div>
+    <div>
+        <label for="date">Date of birth</label>
+        <input type="text" name="date" id="date" placeholder="dd/mm/yyyy">
+    </div>
+    <div>
+        <label for="pincode">Pincode</label>
+        <input type="text" name="pincode" id="pincode" placeholder="Pincode">
+    </div>
+    <div>
+        <label for="cast">Cast</label>
+        <select name="cast" id="cast">
+            <option value="obc">OBC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+            <option value="general">GENERAL</option>
+        </select>
+    </div>
+   
+    <div>
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="taxtarea" rows="5" cols="50"></textarea>
+    </div>
+    <div>
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">Click hare to varify your details</label>
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>

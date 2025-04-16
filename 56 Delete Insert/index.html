@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        Hi I Am Mohd Naeem
+    </div>
+</div>
+<script>
+    let div = document.querySelector(".container");
+    const tmpdiv = document.createElement("h1");
+    tmpdiv.innerText = "LOGO";
+    // div.setAttribute("class","insert");
+    // div.innerHTML = "Created DIV <b> Mohd Naeem</b>"
+    // document.querySelector(".container").after(div);
+    div.insertAdjacentText("afterbegin","Hi Duniya");
+    div.insertAdjacentElement("beforebegin",tmpdiv);
+    
+</script>
+</body>
+</html>

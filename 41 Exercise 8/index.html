@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+            height: 400px;
+            width: 600px;
+            display: flex;
+            align-items: end;
+            position: relative;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            text-align: center;
+            border-radius: 50px;
+            border: 2px solid black;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: animatX 3s linear infinite alternate-reverse;
+        }
+
+        @keyframes animatX {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            20% {
+                transform: translate(100px, -300px);
+                /* Move right and up */
+            }
+
+            40% {
+                transform: translate(200px, 0);
+                /* Move right */
+            }
+
+            60% {
+                transform: translate(300px, -300px);
+                /* Move right and up */
+            }
+
+            80% {
+                transform: translate(400px, 0);
+                /* Move right */
+            }
+
+            100% {
+                transform: translate(500px, -300px);
+                /* Move right and down */
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+
+</html>

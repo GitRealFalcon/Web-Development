@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* id selector */
+        div > p {
+            background-color: aqua;
+            color: blueviolet;
+        }
+        /* Decendent Selector */
+        div p {
+            background-color: brown;
+            color: blue;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: chocolate;
+        }
+        a:link{
+            color: chartreuse;
+        }
+        a:active{
+            background-color: blue;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>first child</p>
+        <p>secound child</p>
+    </main>
+    <!-- class selecter -->
+    <div class="red">i am a div</div>
+    <!-- id selecter -->
+    <div id="green">i am a another div</div>
+    <!-- child selecter -->
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit pariatur voluptas a, perferendis, hic veritatis suscipit iure repellat repellendus earum quam! Nulla natus non optio placeat, recusandae soluta sint.</p>
+        </article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloribus, asperiores enim facere facilis minima ad odit beatae dolor quo inventore? Quo suscipit, omnis adipisci placeat accusantium laudantium quisquam alias.</p>
+    </div>
+   <a href="https://www.facebook.com">GO TO FACEBOOK</a>
+    <a href="https://www.google.com">GO TO Google</a>
+</body>
+</html>

@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+:root {
+    --pesi: 0;
+    --bott: 65px;
+
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navLeft {
+    display: flex;
+    gap: 20px;
+
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu>img {
+    filter: invert();
+    height: 38px;
+    cursor: pointer;
+}
+
+.navLeft>img {
+    filter: invert();
+    height: 40px;
+    cursor: pointer;
+}
+
+.home {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(49, 47, 47);
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+.navRight {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    /* height: 40px; */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 15px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.Signin {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.Signup {
+    border: none;
+}
+
+.secoundaryContainer {
+    width: 100%;
+    display: flex;
+    height: 89%;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.leftContainer {
+    width: 30%;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 5px;
+    /* transition: ease-in-out 2s; */
+}
+
+.rightContainer {
+    width: 70%;
+    height: 100%;
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 10px;
+    color: #b3b3b3;
+    position: relative;
+}
+
+.library {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #b3b3b3;
+    cursor: pointer;
+    justify-content: space-between;
+
+}
+
+.libraryImg {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.libraryImg>img {
+    width: 30px;
+    /* filter: invert(); */
+
+}
+
+.cros {
+    display: none;
+    cursor: pointer;
+}
+
+.cros>img {
+    filter: invert();
+    width: 40px;
+}
+
+.cards {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    /* background-color: #b3b3b3;   */
+    /* border: 1px solid white; */
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: start;
+
+    /* For Webkit-based browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+        width: 12px;
+        /* Width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #000;
+        /* Black background for the track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #444;
+        /* Dark grey thumb */
+        border-radius: 10px;
+        /* Optional: rounded corners for the thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #888;
+        /* Lighter grey color when hovered */
+    }
+
+    /* For Firefox */
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+    scrollbar-color: #444 #000;
+    /* Dark grey thumb and black track */
+
+}
+
+.card {
+    width: 130px;
+    height: 190px;
+    background-color: #1f1f1f;
+    /* border: 1px solid white; */
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.info{
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+}
+
+.image>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.name {
+    width: 150px;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 5px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-white-space: nowrap;
+    overflow: hidden;
+}
+
+.detail {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.greenPlay {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(11, 158, 11);
+    border-radius: 50px;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: var(--bott);
+    opacity: var(--pesi);
+    transition: ease-out 0.3s;
+}
+
+.card:hover {
+
+    --bott: 73px;
+    --pesi: 1;
+    background-color: #1a1818;
+}
+
+
+.player {
+    width: 65vw;
+    background-color: #3a3838;
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    bottom: 2px;
+}
+
+
+
+.playerControl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+.trackName {
+    font-weight: 600;
+    font-size: 0.8rem;
+
+}
+
+.controlButtons {
+    display: flex;
+    gap: 10px;
+
+}
+
+.controlButtons img {
+    filter: invert();
+
+}
+
+.previous {
+    cursor: pointer;
+}
+
+.play {
+    cursor: pointer;
+}
+
+.next {
+    cursor: pointer;
+}
+
+.timerInfo {
+    display: flex;
+    font-weight: 600;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.volume>img {
+    filter: invert();
+    cursor: pointer;
+}
+
+.slider {
+    width: 80px;
+    cursor: pointer;
+}
+
+.seekBar {
+    width: 100%;
+    height: 4px;
+    background-color: #b3b3b3;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.pointer {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -6px;
+}
+
+.trackList {
+    padding: 10px 20px;
+    overflow-y: scroll;
+    height: 85%;
+   
+
+
+    /* For Webkit-based browsers (Chrome, Safari, Edge) */
+    ::-webkit-scrollbar {
+        width: 12px;
+        /* Width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #000;
+        /* Black background for the track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #444;
+        /* Dark grey thumb */
+        border-radius: 10px;
+        /* Optional: rounded corners for the thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #888;
+        /* Lighter grey color when hovered */
+    }
+
+    /* For Firefox */
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+    scrollbar-color: #444 #000;
+    /* Dark grey thumb and black track */
+}
+
+.track {
+    background-color: #000000;
+    color: #b3b3b3;
+    height: 60px;
+    width: 99%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-out 0.1s;
+}
+
+.track:hover {
+    background-color: rgb(11, 158, 11);
+    height: 61px;
+    width: 100%;
+}
+
+.trackInfo {
+    width: 60%;
+    overflow: hidden;
+
+}
+
+.trackInfo div {
+    height: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.trackName {
+    width: 200px;
+    height: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-white-space: nowrap;
+    overflow: hidden;
+}
+
+.trackInfo>span {
+    font-size: 13px;
+}
+
+.playNow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.playNow>span {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.playNow>img {
+    filter: invert();
+    width: 30px;
+    background-color: #dad8d8;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width : 1010px) {
+    .playNow>span {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .player {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 98%;
+    }
+
+    .leftContainer {
+        position: absolute;
+        width: 50%;
+        z-index: 1;
+        left: -100%;
+        transition: ease 0.5s;
+    }
+
+    .cards {
+        gap: 5px;
+    }
+
+    .rightContainer {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .cros {
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width : 550px) {
+   
+
+    .home{
+        display: none;
+    }
+    button {
+        padding: 10px 20px;
+    }
+
+    .player{
+        height: 210px;
+        bottom: 20px;
+        right: 2px;
+        gap: 15px;
+       
+    }
+
+    .playerControl{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .timerInfo{
+        flex-direction: column;
+    }
+
+    
+    .cards {
+        gap: 15px;
+        justify-content: center;
+        margin-top: 10px;
+        /* height: 90%; */
+    }
+    .card{
+        width: 95%;
+        height: 50vh;
+    }
+
+    .leftContainer{
+        width: 100%;
+        
+    }
+
+    .slider{
+        width: 150px;
+    }
+    .trackName{
+        font-size: 16px;
+    }
+}

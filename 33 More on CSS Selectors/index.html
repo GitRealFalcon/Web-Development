@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Slectoes</title>
+    <style>
+        /* .box:first-child{
+            color: aqua;
+        } */
+        /* p:first-child{
+            color: aqua;
+        } */
+        /* p:nth-child(1){
+            color: aqua;
+         } */
+        /* p:nth-child(even){
+            color: blue;
+          } */
+        /* p:nth-child(odd){
+            color: aqua;
+          } */
+        /* .box::after{
+             content: "HI How are You";
+           } */
+        /* .box::before{
+                content: "I Im DEV";
+            } */
+        /* [data-color="primary"]{
+                background-color: blueviolet;
+             } */
+        /* .box *{
+                background-color: blueviolet;
+              } */
+        p::selection{
+                color: aquamarine;
+                background-color: black;
+               }
+        p::first-letter {
+            color: rgb(139, 53, 139);
+            font-weight: 800;
+            font-size: 2rem;
+        }
+         input::placeholder{
+            color: rgb(35, 133, 100);
+          }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p data-color="primary">Hello I am Developer</p>
+        <p>I am an Indnian</p>
+        <p>My City is Moradabad</p>
+        <input type="text" placeholder="Enter Email Id">
+    </div>
+</body>
+
+</html>

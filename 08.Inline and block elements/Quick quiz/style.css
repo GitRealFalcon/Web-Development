@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(223, 248, 240);
+
+
+
+}
+
+
+
+button {
+    padding-inline: 22%;
+
+    font-size: medium;
+    color: rgb(38, 0, 255);
+    background-color: rgb(136, 202, 4);
+}

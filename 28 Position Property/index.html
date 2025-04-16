@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 255px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .perent {
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid purple;
+            /* position: relative; */
+
+            /* Exception:--> trensform, filter ,or pespective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: sticky;
+            top: 0px;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            /* position: absolute;
+            top: 0; */
+        }
+
+        .box2 {
+            background-color: azure;
+            position: relative;
+            left: 90px;
+            top: 80px;
+
+        }
+
+        .box3 {
+            position: fixed;
+            background-color: aquamarine;
+            bottom: 150px;
+            height: 55px;
+            width: 55px;
+            border-radius: 55px;
+
+
+        }
+
+        .box4 {
+           position: absolute;
+            background-color: purple;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="perent">
+
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+    </div>
+    <footer>
+        &copy; All right reserved
+    </footer>
+</body>
+
+</html>

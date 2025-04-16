@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.btn{
+    border-radius: 5px;
+    background: #314158;
+    color: white;
+    font-weight: bold;
+    /* rounded-sm p-2 bg-slate-700 text-white hover:bg-violet-700 hover:cursor-pointer */
+}
+
+.btn:hover{
+    background: #7008e7;
+    cursor: pointer;
+}

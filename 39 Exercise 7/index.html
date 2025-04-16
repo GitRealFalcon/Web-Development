@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI';
+        }
+
+        .container {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px 0;
+            /* border: 1px solid black; */
+        }
+
+        .nav-bar {
+            margin: 15px 0;
+            width: 90%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid black; */
+
+        }
+
+        .logo {
+            width: 30%;
+            height: 100%;
+            margin: 0 15px;
+        }
+
+        .logo img {
+            height: 100%;
+        }
+
+        ul {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 0.95em;
+            /* border: 1px solid black; */
+
+        }
+
+        li {
+            color: rgb(66, 83, 79);
+            font-weight: 600;
+            /* width: 20%; */
+            /* height: 100%; */
+            list-style: none;
+        }
+
+        ul img {
+            height: 50%;
+            display: none;
+        }
+
+        .heading {
+            color: rgb(66, 83, 79);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 90%;
+            height: 250px;
+            /* border: 1px solid black; */
+            text-align: center;
+
+        }
+        .heading h1{
+            font-family: sans-serif;
+            font-weight: 350;
+        }
+
+        .heading a button {
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            background-color: #00b6d1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .download-grids {
+            width: 70%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: rgb(158 158 158 / 13%);
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color: rgb(66, 83, 79);
+            border-radius: 10px;
+            /* border: 1px solid black; */
+        }
+
+        .box a button {
+            background-color:#00b6d1;
+            border: none;
+            border-radius: 5px;
+            /* color: rgb(66, 83, 79); */
+            color: white;
+            font-weight: 600;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .box a .green{
+            background-color: green;
+        }
+
+        .downloads {
+            display: flex;
+            gap: 5px;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 991px) {
+            ul {
+                justify-content: end;
+            }
+
+            ul li {
+                display: none;
+            }
+
+            ul img {
+                display: block;
+            }
+
+            .download-grids {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width:717px) {
+            .download-grids {
+                width: 70%;
+                grid-template-columns: repeat(1, 0.9fr);
+            }
+
+        }
+
+        @media screen and (max-width:412px) {
+            .download-grids {
+                width: 90%;
+                grid-template-columns: repeat(1, 0.9fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo"><img src="UE-Logo-1.webp" alt="logo"></div>
+            <ul>
+                <li> Products</li>
+                <li>For Business</li>
+                <li>Resources</li>
+                <li>Suppotr</li>
+                <li>Our Company</li>
+                <img src="Menu-burger.svg" alt="menu">
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>Download <b>Ultraedit</b> For Windows</h1>
+            <p>Downloads and try Ultaredit before you buy it! This download includes <br> the full windows version of
+                the text editer</p>
+            <a href="#"><button>DOWNLOAD MAC OR LINUX VERSION</button></a>
+        </div>
+        <div class="download-grids">
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green" >Download 64-bit</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green">Download 64-bit</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green">Download 64-bit</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green">Download 64-bit</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green">Download 64-bit</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green">Download 64-bit</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <div class="downloads">
+                    <a href="/city.jpg"><button>Download 32-bit</button></a>
+                    <a href="/city.jpg"><button class="green">Download 64-bit</button></a>
+                </div>
+            </div>
+
+        </div>
+        <footer>&copy;Mohd Naeem</footer>
+    </div>
+</body>
+
+</html>

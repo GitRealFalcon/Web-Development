@@ -1,0 +1,19 @@
+{
+  "name": "com.spotify",
+  "version": "1.0.0",
+  "description": "Music",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "Naeem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "slugify": "^1.6.6"
+  }
+}

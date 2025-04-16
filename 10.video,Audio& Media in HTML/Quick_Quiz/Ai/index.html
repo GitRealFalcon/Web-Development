@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Songs Collection</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        header ul li {
+            margin: 0 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        header ul li:hover {
+            color: #ffd700;
+        }
+
+        /* Main Content Styles */
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        main > div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Video Iframe Styles */
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        iframe:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header ul li {
+                margin: 10px 0;
+            }
+
+            main > div {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Search and Filter */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Playlist</li>
+            <li>Artists</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
+    <h1>Romantic Songs Collection</h1>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search songs...">
+    </div>
+
+    <main>
+        <div id="videoContainer">
+            <!-- Your existing iframes -->
+            <iframe name="video1" src="https://www.youtube.com/embed/JtnPpxe8K7c?si=jvhZmujH5693WxqB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video2" src="https://www.youtube.com/embed/HPsxxBhv9kc?si=XUzlAdewo55o4ggO&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video3" src="https://www.youtube.com/embed/jqOuWRtgsXU?si=AtEzdCxVLdE2ANku title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Saanso ki maala</iframe>
+            <iframe name="video4" src="https://www.youtube.com/embed/jXwg9l9D51A?si=UJOV2w_m3CEMjqsk title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video5" src="https://www.youtube.com/embed/iv7lcUkFVSc?si=WW2jt5vhG-Zr_N4H title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video6" src="https://www.youtube.com/embed/0J0HZrDvbjY?si=MsqGibc9-2cW5iBo title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video7" src="https://www.youtube.com/embed/qoq8B8ThgEM?si=btL10P3wKr0r4pDh title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video8" src="https://www.youtube.com/embed/qCLcM4OWN_s?si=fNENN3m0n5ULmUud" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video9" src="https://www.youtube.com/embed/bqiPYm0_5EQ?si=54MVEn0o5va5FD7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video10" src="https://www.youtube.com/embed/2_mWEL0Nuk8?si=_5S3_BIh53m_vg_W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe name="video11" src="https://www.youtube.com/embed/U_DSCLqgZCo?si=18J9PsuNuvvSibbr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- Add more iframes as needed -->
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Romantic Songs Collection. All Rights Reserved.
+    </footer>
+
+    <script>
+        // Search Functionality
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const videos = document.querySelectorAll('iframe');
+            
+            videos.forEach(video => {
+                const title = video.getAttribute('title').toLowerCase();
+                if (title.includes(searchTerm)) {
+                    video.style.display = 'block';
+                } else {
+                    video.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
