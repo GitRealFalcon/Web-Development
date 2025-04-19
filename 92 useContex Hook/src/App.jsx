@@ -1,22 +1,19 @@
-import { useState,useEffect,useRef } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { BiSolidEditAlt } from "react-icons/bi";
+import Navbar from './components/Navbar'
+import { couterContext } from './context/context'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
-  const btnref = useRef()
-  useEffect(() => {
-    console.log("frist rendring");
-    btnref.current.style.backgroundColor = "red";
-   
-  },[]);
-  
   return (
     <>
+      <couterContext.Provider value={{count,setCount}}>
       <div>
+        <Navbar/> 
+         {/* <Navbar props={{count,setCount}}/> */}
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -26,7 +23,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button ref={btnref} onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
@@ -36,9 +33,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <button onClick={()=>{
-        btnref.current.style.display = 'none'
-      }}>Change Me</button>
+      </couterContext.Provider>
     </>
   )
 }

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+nav{
+  display: flex;
+  gap: 23px;
+  background: black;
+   height: 32px;
+   align-items: center;
+   
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+a li{
+  list-style: none;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+.red{
+  background: red;
+  color: white;
+ 
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
